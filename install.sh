@@ -1,2 +1,2 @@
 #! /bin/sh
-cp ./port /usr/local/bin/ && cp ./port.1.gz /usr/local/man/man1/
+mv ./port.sh ./port && cp ./port /usr/local/bin/ && gzip ./port.1 && cp ./port.1.gz /usr/local/man/man1/
