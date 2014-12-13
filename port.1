@@ -1,0 +1,51 @@
+.TH port 8 "13 December 2014" "1.0" "Man page for Port"
+.SH NAME
+.B "port "
+\- easily access the freebsd ports system
+.SH SYNOPSIS
+.B port
+[options] [port]
+.SH DESCRIPTION
+.B port 
+allows easy access to the FreeBSD ports system. It can be used to search, configure, install, and remove ports.
+.SH OPTIONS
+.IP
+.B update 
+: update the ports tree
+.IP
+.B old
+: list outdated packages
+.IP
+.B config 
+.I category/port
+: configure port
+.IP
+.B rmconfig
+.I category/port
+: remove port configuration
+.IP
+.B confrec
+.I category/port
+: recursively configure port
+.IP
+.B install
+.I category/port
+: install port
+.IP
+.B remove
+.I category/port
+: deinstall port
+.IP
+.B search
+.I name
+: search for ports matching $name
+.IP
+.B detail
+.I category/port
+: show details of port
+.SH SEE ALSO
+portsnap(8), make(1), pkg(8), portmaster(8)
+.SH BUGS
+Does not support port names being piped in.
+.SH AUTH
+Connor Duncan (cnnrduncan@gmail.com)
